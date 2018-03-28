@@ -7,6 +7,8 @@ docker build -t mongodb_container
 To start mongo instance:
 docker run mongodb_container -it -d
 
+mongo: apt-get install mongodb-client 
+
 connect to container using mongo:
 mongo --host 172.17.0.2
 
@@ -20,6 +22,8 @@ $ docker run --rm -t -i --link pg_test:pg eg_postgresql bash
 
 Connecting from your host system
 Assuming you have the postgresql-client installed, you can use the host-mapped port to test as well. You need to use docker ps to find out what local host port the container is mapped to first:
+
+pgsql: apt-get install postgresql-client-common
 
 $ docker ps
 
