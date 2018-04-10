@@ -1,4 +1,11 @@
+# Docker Installation script
+docker_install.sh
+don't forget to chmod u+x :)
+
 # docker_db
+
+
+
 clone github repo
 
 Build an image using the Dockerfile at current location:
